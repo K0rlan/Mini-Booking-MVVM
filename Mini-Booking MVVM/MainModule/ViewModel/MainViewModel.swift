@@ -25,21 +25,21 @@ final class MainViewModel: MainViewModelProtocol{
     
     func startFetch() {
         updateViewData?(.loading)
-        provider.request(.getHotelList) { (result) in
+        provider.request(.getHotelList) { [weak self] (result) in
             switch result{
             case .success(let response):
                 do {
                     let hotelResponse = try JSONDecoder().decode([HotelList.Data].self, from: response.data)
-                    self.updateViewData?(.success(hotelResponse))
-                    self.hotels = hotelResponse
+                    self?.updateViewData?(.success(hotelResponse))
+                    self?.hotels = hotelResponse
                 } catch let error {
                     print("Error in parsing: \(error)")
-                    self.updateViewData?(.failure(error))
+                    self?.updateViewData?(.failure(error))
                 }
             case .failure(let error):
                 let requestError = (error as NSError)
                 print("Request Error message: \(error.localizedDescription), code: \(requestError.code)")
-                self.updateViewData?(.failure(error))
+                self?.updateViewData?(.failure(error))
             }
         }
     }
