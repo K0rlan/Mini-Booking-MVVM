@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27AA303C5EDA5264F3905311 /* Pods_Mini_Booking_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4B760C97D6AA70A148A40 /* Pods_Mini_Booking_MVVM.framework */; };
+		E4D4DB6625E10CDC009704A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4DB6525E10CDC009704A3 /* Constants.swift */; };
+		E4D4DB6C25E134D7009704A3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4DB6B25E134D7009704A3 /* DetailsViewController.swift */; };
+		E4D4DB7425E13E4D009704A3 /* HotelDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4DB7325E13E4D009704A3 /* HotelDescription.swift */; };
+		E4D4DB7825E13E95009704A3 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4DB7725E13E95009704A3 /* DetailsViewModel.swift */; };
+		E4D4DB7B25E14823009704A3 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4DB7A25E14823009704A3 /* DetailsView.swift */; };
+		E4D7B50225E06455009F378C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B50125E06455009F378C /* AppDelegate.swift */; };
+		E4D7B50425E06455009F378C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B50325E06455009F378C /* SceneDelegate.swift */; };
+		E4D7B50625E06455009F378C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B50525E06455009F378C /* MainViewController.swift */; };
+		E4D7B50B25E06457009F378C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D7B50A25E06457009F378C /* Assets.xcassets */; };
+		E4D7B50E25E06457009F378C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D7B50C25E06457009F378C /* LaunchScreen.storyboard */; };
+		E4D7B52425E0652F009F378C /* HotelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B52325E0652F009F378C /* HotelList.swift */; };
+		E4D7B52725E06586009F378C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B52625E06586009F378C /* APIService.swift */; };
+		E4D7B52B25E06648009F378C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E4D7B52A25E06648009F378C /* Moya */; };
+		E4D7B52D25E06648009F378C /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E4D7B52C25E06648009F378C /* ReactiveMoya */; };
+		E4D7B52F25E06648009F378C /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E4D7B52E25E06648009F378C /* RxMoya */; };
+		E4D7B53225E0668D009F378C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B53125E0668D009F378C /* MainViewModel.swift */; };
+		E4D7B53525E06A9C009F378C /* HotelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7B53425E06A9C009F378C /* HotelListView.swift */; };
+		E4EBA06325E083AC00767A72 /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EBA06225E083AC00767A72 /* HotelTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23306DA75D035E2CCFC697D7 /* Pods-Mini-Booking MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-Booking MVVM.release.xcconfig"; path = "Target Support Files/Pods-Mini-Booking MVVM/Pods-Mini-Booking MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		D8A4B760C97D6AA70A148A40 /* Pods_Mini_Booking_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mini_Booking_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D4DB6525E10CDC009704A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E4D4DB6B25E134D7009704A3 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E4D4DB7325E13E4D009704A3 /* HotelDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDescription.swift; sourceTree = "<group>"; };
+		E4D4DB7725E13E95009704A3 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		E4D4DB7A25E14823009704A3 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		E4D7B4FE25E06455009F378C /* Mini-Booking MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini-Booking MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D7B50125E06455009F378C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4D7B50325E06455009F378C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E4D7B50525E06455009F378C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E4D7B50A25E06457009F378C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4D7B50D25E06457009F378C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4D7B50F25E06457009F378C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D7B52325E0652F009F378C /* HotelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelList.swift; sourceTree = "<group>"; };
+		E4D7B52625E06586009F378C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E4D7B53125E0668D009F378C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E4D7B53425E06A9C009F378C /* HotelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListView.swift; sourceTree = "<group>"; };
+		E4EBA06225E083AC00767A72 /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
+		FF45BB7CCEDB4C204486718D /* Pods-Mini-Booking MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini-Booking MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Mini-Booking MVVM/Pods-Mini-Booking MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4D7B4FB25E06455009F378C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D7B52F25E06648009F378C /* RxMoya in Frameworks */,
+				E4D7B52B25E06648009F378C /* Moya in Frameworks */,
+				E4D7B52D25E06648009F378C /* ReactiveMoya in Frameworks */,
+				27AA303C5EDA5264F3905311 /* Pods_Mini_Booking_MVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F70F2265A50D869D9964377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF45BB7CCEDB4C204486718D /* Pods-Mini-Booking MVVM.debug.xcconfig */,
+				23306DA75D035E2CCFC697D7 /* Pods-Mini-Booking MVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85755C62A3675DF755CE87ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4B760C97D6AA70A148A40 /* Pods_Mini_Booking_MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4D4DB6F25E13D75009704A3 /* DetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D4DB7225E13E1D009704A3 /* ViewModel */,
+				E4D4DB7125E13E1A009704A3 /* View */,
+				E4D4DB7025E13E15009704A3 /* Model */,
+			);
+			path = DetailsModule;
+			sourceTree = "<group>";
+		};
+		E4D4DB7025E13E15009704A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4D4DB7325E13E4D009704A3 /* HotelDescription.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4D4DB7125E13E1A009704A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4D4DB6B25E134D7009704A3 /* DetailsViewController.swift */,
+				E4D4DB7A25E14823009704A3 /* DetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4D4DB7225E13E1D009704A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4D4DB7725E13E95009704A3 /* DetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E4D7B4F525E06455009F378C = {
+			isa = PBXGroup;
+			children = (
+				E4D7B50025E06455009F378C /* Mini-Booking MVVM */,
+				E4D7B4FF25E06455009F378C /* Products */,
+				6F70F2265A50D869D9964377 /* Pods */,
+				85755C62A3675DF755CE87ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4D7B4FF25E06455009F378C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7B4FE25E06455009F378C /* Mini-Booking MVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D7B50025E06455009F378C /* Mini-Booking MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E4D4DB6F25E13D75009704A3 /* DetailsModule */,
+				E4D7B51A25E064F1009F378C /* MainModule */,
+				E4D7B51725E06488009F378C /* Supporting Files */,
+				E4D7B50F25E06457009F378C /* Info.plist */,
+			);
+			path = "Mini-Booking MVVM";
+			sourceTree = "<group>";
+		};
+		E4D7B51725E06488009F378C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7B50125E06455009F378C /* AppDelegate.swift */,
+				E4D7B50325E06455009F378C /* SceneDelegate.swift */,
+				E4D7B50A25E06457009F378C /* Assets.xcassets */,
+				E4D7B50C25E06457009F378C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4D7B51A25E064F1009F378C /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7B51D25E06503009F378C /* ViewModel */,
+				E4D7B51C25E064FF009F378C /* View */,
+				E4D7B51B25E064F8009F378C /* Model */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		E4D7B51B25E064F8009F378C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7B52325E0652F009F378C /* HotelList.swift */,
+				E4D7B52625E06586009F378C /* APIService.swift */,
+				E4D4DB6525E10CDC009704A3 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4D7B51C25E064FF009F378C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7B50525E06455009F378C /* MainViewController.swift */,
+				E4D7B53425E06A9C009F378C /* HotelListView.swift */,
+				E4EBA06225E083AC00767A72 /* HotelTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4D7B51D25E06503009F378C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7B53125E0668D009F378C /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4D7B4FD25E06455009F378C /* Mini-Booking MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D7B51225E06458009F378C /* Build configuration list for PBXNativeTarget "Mini-Booking MVVM" */;
+			buildPhases = (
+				69CB52515E6F91B84C969C19 /* [CP] Check Pods Manifest.lock */,
+				E4D7B4FA25E06455009F378C /* Sources */,
+				E4D7B4FB25E06455009F378C /* Frameworks */,
+				E4D7B4FC25E06455009F378C /* Resources */,
+				C7D17B7F2258F72B7CE25FF8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mini-Booking MVVM";
+			packageProductDependencies = (
+				E4D7B52A25E06648009F378C /* Moya */,
+				E4D7B52C25E06648009F378C /* ReactiveMoya */,
+				E4D7B52E25E06648009F378C /* RxMoya */,
+			);
+			productName = "Mini-Booking MVVM";
+			productReference = E4D7B4FE25E06455009F378C /* Mini-Booking MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4D7B4F625E06455009F378C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E4D7B4FD25E06455009F378C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E4D7B4F925E06455009F378C /* Build configuration list for PBXProject "Mini-Booking MVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4D7B4F525E06455009F378C;
+			packageReferences = (
+				E4D7B52925E06648009F378C /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = E4D7B4FF25E06455009F378C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4D7B4FD25E06455009F378C /* Mini-Booking MVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4D7B4FC25E06455009F378C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D7B50E25E06457009F378C /* LaunchScreen.storyboard in Resources */,
+				E4D7B50B25E06457009F378C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69CB52515E6F91B84C969C19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mini-Booking MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D17B7F2258F72B7CE25FF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mini-Booking MVVM/Pods-Mini-Booking MVVM-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mini-Booking MVVM/Pods-Mini-Booking MVVM-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mini-Booking MVVM/Pods-Mini-Booking MVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4D7B4FA25E06455009F378C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D7B50625E06455009F378C /* MainViewController.swift in Sources */,
+				E4D4DB7B25E14823009704A3 /* DetailsView.swift in Sources */,
+				E4D4DB7425E13E4D009704A3 /* HotelDescription.swift in Sources */,
+				E4D7B52725E06586009F378C /* APIService.swift in Sources */,
+				E4EBA06325E083AC00767A72 /* HotelTableViewCell.swift in Sources */,
+				E4D4DB7825E13E95009704A3 /* DetailsViewModel.swift in Sources */,
+				E4D4DB6C25E134D7009704A3 /* DetailsViewController.swift in Sources */,
+				E4D7B50225E06455009F378C /* AppDelegate.swift in Sources */,
+				E4D7B52425E0652F009F378C /* HotelList.swift in Sources */,
+				E4D7B53525E06A9C009F378C /* HotelListView.swift in Sources */,
+				E4D7B50425E06455009F378C /* SceneDelegate.swift in Sources */,
+				E4D7B53225E0668D009F378C /* MainViewModel.swift in Sources */,
+				E4D4DB6625E10CDC009704A3 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E4D7B50C25E06457009F378C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D7B50D25E06457009F378C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4D7B51025E06457009F378C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4D7B51125E06457009F378C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4D7B51325E06458009F378C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF45BB7CCEDB4C204486718D /* Pods-Mini-Booking MVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MS9KG4339;
+				INFOPLIST_FILE = "Mini-Booking MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "koko.Mini-Booking-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4D7B51425E06458009F378C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23306DA75D035E2CCFC697D7 /* Pods-Mini-Booking MVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MS9KG4339;
+				INFOPLIST_FILE = "Mini-Booking MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "koko.Mini-Booking-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4D7B4F925E06455009F378C /* Build configuration list for PBXProject "Mini-Booking MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D7B51025E06457009F378C /* Debug */,
+				E4D7B51125E06457009F378C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D7B51225E06458009F378C /* Build configuration list for PBXNativeTarget "Mini-Booking MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D7B51325E06458009F378C /* Debug */,
+				E4D7B51425E06458009F378C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4D7B52925E06648009F378C /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4D7B52A25E06648009F378C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4D7B52925E06648009F378C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E4D7B52C25E06648009F378C /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4D7B52925E06648009F378C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		E4D7B52E25E06648009F378C /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4D7B52925E06648009F378C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E4D7B4F625E06455009F378C /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Mini_Booking_MVVM {
+  umbrella header "Pods-Mini-Booking MVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}
